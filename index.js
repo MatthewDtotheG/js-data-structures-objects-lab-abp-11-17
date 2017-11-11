@@ -17,6 +17,6 @@ function deleteFromDriverByKey(driver, key) {
 
 function destructivelyDeleteFromdriverByKey(driver, key) {
   const newDriver = Object.assign({}, driver);
-  delete newDriver[key];
+  delete driver[key];
   return newDriver;
 }
